@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace DIIA_UITest.Features.MainMenu
+namespace DIIA_UITest.Features.MainPage.PopularServicesBlock
 {
     using TechTalk.SpecFlow;
     using System;
@@ -41,7 +41,7 @@ namespace DIIA_UITest.Features.MainMenu
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/MainMenu", "PopularServices", "\tAs a visitor\r\n    I want to see a popular servises on the main page\r\n\tIn order t" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/MainPage/PopularServicesBlock", "PopularServices", "\tAs a visitor\r\n    I want to see a popular servises on the main page\r\n\tIn order t" +
                     "o find them faster", ProgrammingLanguage.CSharp, new string[] {
                         "mainpage",
                         "popularservice",

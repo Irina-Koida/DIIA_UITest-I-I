@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace DIIA_UITest.Features.MainMenu
+namespace DIIA_UITest.Features.MainPage.SearchBlock
 {
     using TechTalk.SpecFlow;
     using System;
@@ -35,7 +35,7 @@ namespace DIIA_UITest.Features.MainMenu
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/MainMenu", "ServicesSubMenu", "As a user\r\nI want see full list of services in the header of main page\r\nIn order " +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/MainPage/SearchBlock", "ServicesSubMenu", "As a user\r\nI want see full list of services in the header of main page\r\nIn order " +
                     "to find fast the service I need", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
