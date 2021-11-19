@@ -8,19 +8,19 @@ Background:
 
 @news
 Scenario: Check that pagination number of next page become active when you click the "More news" button
-	When I click "More news" button
+	When I click on the more news button
 	Then The pagination number of next page are active
 
 @news
 Scenario: Check the navigation to the next page by click the "Next page" button
-	When I click "Next page" button
+	When I click the next page button
 	Then I navigate to the next page
 
 @news
 Scenario: Check the navigation to the previous page by click the "Previous page" button
-    When I click "Next page" button
+    When I click the next page button
 	Then I navigate to the next page
-	When I click "Previous page" button
+	When I click the previous page button
 	Then I navigate to the previous page
 
 @news
