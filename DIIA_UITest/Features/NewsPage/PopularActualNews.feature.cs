@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace DIIA_UITest.Features.MainMenu
+namespace DIIA_UITest.Features.NewsPage
 {
     using TechTalk.SpecFlow;
     using System;
@@ -20,23 +20,22 @@ namespace DIIA_UITest.Features.MainMenu
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("PopularServices")]
-    public partial class PopularServicesFeature
+    [NUnit.Framework.DescriptionAttribute("PopularActualNews")]
+    public partial class PopularActualNewsFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "PopularServices.feature"
+#line 1 "PopularActualNews.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/MainMenu", "PopularServices", "\tAs a visitor\r\n    I want to see a popular servises on the main page\r\n\tIn order t" +
-                    "o find them faster", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/NewsPage", "PopularActualNews", "As a user\r\nI want see a news on the news page\r\nIn order to read the news", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -79,21 +78,19 @@ namespace DIIA_UITest.Features.MainMenu
 #line 6
 #line hidden
 #line 7
- testRunner.Given("Main page is open", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("News page is open", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Check navigation to the service page from the block with popular service")]
-        [NUnit.Framework.CategoryAttribute("popularservice")]
-        [NUnit.Framework.CategoryAttribute("swiper")]
-        public virtual void CheckNavigationToTheServicePageFromTheBlockWithPopularService()
+        [NUnit.Framework.DescriptionAttribute("Check navigation to the news page from the block with news")]
+        [NUnit.Framework.CategoryAttribute("news")]
+        public virtual void CheckNavigationToTheNewsPageFromTheBlockWithNews()
         {
             string[] tagsOfScenario = new string[] {
-                    "popularservice",
-                    "swiper"};
+                    "news"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check navigation to the service page from the block with popular service", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check navigation to the news page from the block with news", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 10
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -118,26 +115,24 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 11
- testRunner.When("I click on the first service", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click on the first news", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 12
- testRunner.Then("I navigate to the service page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I navigate to the news page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Check the swipe right the popular services by swiper - right button")]
-        [NUnit.Framework.CategoryAttribute("swiper")]
-        [NUnit.Framework.CategoryAttribute("popularservice")]
-        public virtual void CheckTheSwipeRightThePopularServicesBySwiper_RightButton()
+        [NUnit.Framework.DescriptionAttribute("Check that more news is shown when you click the More News button")]
+        [NUnit.Framework.CategoryAttribute("news")]
+        public virtual void CheckThatMoreNewsIsShownWhenYouClickTheMoreNewsButton()
         {
             string[] tagsOfScenario = new string[] {
-                    "swiper",
-                    "popularservice"};
+                    "news"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check the swipe right the popular services by swiper - right button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check that more news is shown when you click the More News button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 15
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -162,26 +157,24 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 16
- testRunner.When("I click on the swiper rigt button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click \"Більше новин\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 17
- testRunner.Then("Popular servises moved right on one position", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I see more news", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Check the swipe left the popular services by swiper - left button")]
-        [NUnit.Framework.CategoryAttribute("swiper")]
-        [NUnit.Framework.CategoryAttribute("popularservice")]
-        public virtual void CheckTheSwipeLeftThePopularServicesBySwiper_LeftButton()
+        [NUnit.Framework.DescriptionAttribute("Check the navigation to the next page by click the \"Next page\" button")]
+        [NUnit.Framework.CategoryAttribute("news")]
+        public virtual void CheckTheNavigationToTheNextPageByClickTheNextPageButton()
         {
             string[] tagsOfScenario = new string[] {
-                    "swiper",
-                    "popularservice"};
+                    "news"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check the swipe left the popular services by swiper - left button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check the navigation to the next page by click the \"Next page\" button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 20
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -206,33 +199,25 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 21
- testRunner.When("I click on the swiper rigt button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click \"Наступна сторінка\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 22
- testRunner.Then("Popular servises moved right on one position", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 23
- testRunner.When("I click on the swiper left button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 24
- testRunner.Then("Popular servises moved left on one position", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I navigate to the next page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Check the swipe to the left of popular services bullet pagination")]
-        [NUnit.Framework.CategoryAttribute("swiper")]
-        [NUnit.Framework.CategoryAttribute("popularservice")]
-        public virtual void CheckTheSwipeToTheLeftOfPopularServicesBulletPagination()
+        [NUnit.Framework.DescriptionAttribute("Check the navigation to the previous page by click the \"Next page\"")]
+        [NUnit.Framework.CategoryAttribute("news")]
+        public virtual void CheckTheNavigationToThePreviousPageByClickTheNextPage()
         {
             string[] tagsOfScenario = new string[] {
-                    "swiper",
-                    "popularservice"};
+                    "news"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check the swipe to the left of popular services bullet pagination", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 27
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check the navigation to the previous page by click the \"Next page\"", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 25
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -254,35 +239,35 @@ this.ScenarioInitialize(scenarioInfo);
                 this.ScenarioStart();
 #line 6
 this.FeatureBackground();
+#line hidden
+#line 26
+    testRunner.When("I click \"Наступна сторінка\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 27
+ testRunner.Then("I navigate to the next page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 28
- testRunner.When("I click on the right side of the pagination bullet bar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click \"Попередня сторінка\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 29
- testRunner.Then("Popular services moved one position.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 30
- testRunner.When("I click from left to right on the pagination bullet bar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 31
- testRunner.Then("Popular services moved one position to the left.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I navigate to the previous page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Check the swipe to the right of popular services bullet pagination")]
-        [NUnit.Framework.CategoryAttribute("swiper")]
-        [NUnit.Framework.CategoryAttribute("popularservice")]
-        public virtual void CheckTheSwipeToTheRightOfPopularServicesBulletPagination()
+        [NUnit.Framework.DescriptionAttribute("Check that there is a block with the latest news on the page of the selected news" +
+            "")]
+        [NUnit.Framework.CategoryAttribute("news")]
+        public virtual void CheckThatThereIsABlockWithTheLatestNewsOnThePageOfTheSelectedNews()
         {
             string[] tagsOfScenario = new string[] {
-                    "swiper",
-                    "popularservice"};
+                    "news"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check the swipe to the right of popular services bullet pagination", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 34
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check that there is a block with the latest news on the page of the selected news" +
+                    "", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 32
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -305,11 +290,61 @@ this.ScenarioInitialize(scenarioInfo);
 #line 6
 this.FeatureBackground();
 #line hidden
-#line 35
- testRunner.When("I click on the right side of the pagination bullet bar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 33
+ testRunner.When("I selected a news", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 36
- testRunner.Then("Popular services moved one position.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 34
+ testRunner.When("I navigate to the news page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 35
+ testRunner.Then("I see a block with the latest news below, under the selected news", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Check that the selected news page has the option to share this news on social net" +
+            "works")]
+        [NUnit.Framework.CategoryAttribute("news")]
+        public virtual void CheckThatTheSelectedNewsPageHasTheOptionToShareThisNewsOnSocialNetworks()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "news"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check that the selected news page has the option to share this news on social net" +
+                    "works", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 38
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line hidden
+#line 39
+ testRunner.When("I selected a news", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 40
+ testRunner.When("I navigate to the news page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 41
+ testRunner.Then("I see the block \"Поділитись новиною\" to the right of the selected news", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

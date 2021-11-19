@@ -1,5 +1,4 @@
-﻿@mainpage @search
-Feature: Search
+﻿Feature: Search
 	As a visitor
     I want to search information on the main page
 	In order to quickly find the information I need
