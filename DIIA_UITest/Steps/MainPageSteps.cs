@@ -14,19 +14,19 @@ namespace DIIA_UITest.Steps
     public sealed class MainPageSteps
     {
         private readonly ScenarioContext _scenarioContext;
-        private readonly ServiceSwiperPage _serviceSwiperPage;
+        private readonly MainPage _mainPage;
 
         public MainPageSteps(ScenarioContext scenarioContext)
         {
             _scenarioContext = scenarioContext;
             var webDriver = _scenarioContext.Get<IWebDriver>("WebDriver");
-            _serviceSwiperPage = new ServiceSwiperPage(webDriver);
+            _mainPage = new MainPage(webDriver);
         }
 
-        [Given(@"Sign in page is opened")]
-        public void GivenSignInPageIsOpened()
-        {
-            _serviceSwiperPage.GoToServiceSwiperPage();            
-        }
+        //[Given(@"Sign in page is opened")]
+        //public void MainPageIsOpened()
+        //{
+        //    _mainPage.GoToMainPage();            
+        //}
     }
 }
