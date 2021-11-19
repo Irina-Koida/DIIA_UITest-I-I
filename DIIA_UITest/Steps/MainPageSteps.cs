@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TechTalk.SpecFlow;
-using NUnit.Framework;
+﻿using TechTalk.SpecFlow;
 using OpenQA.Selenium;
 using DIIA_UITest.POM;
 
@@ -26,7 +20,7 @@ namespace DIIA_UITest.Steps
         //[Given(@"Sign in page is opened")]
         //public void MainPageIsOpened()
         //{
-        //    _mainPage.GoToMainPage();            
+        //    _mainPage.GoToMainPage();
         //}
     }
 }

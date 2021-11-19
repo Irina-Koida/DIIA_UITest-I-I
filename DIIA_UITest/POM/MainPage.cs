@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 
-
 namespace DIIA_UITest.POM
 {
     class MainPage
