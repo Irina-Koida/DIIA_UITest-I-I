@@ -18,6 +18,7 @@ namespace DIIA_UITest.POM
             _webDriver = webDriver;
         }
 
+
         public By _allQuestionAndAnswerButton = By.CssSelector(".wrap-all-link_link > span");
         public By _faqPageHeaderMessage = By.CssSelector(".article-level-1");
 
