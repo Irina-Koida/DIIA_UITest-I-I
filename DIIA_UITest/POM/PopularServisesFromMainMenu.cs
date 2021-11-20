@@ -11,13 +11,13 @@ namespace DIIA_UITest.POM
             _webDriver = webDriver;
         }
 
-        private readonly By _clickRightButton = By.CssSelector("");
-        private readonly By _clikLeftButton = By.CssSelector("");
-        private readonly By _swipeRight = By.XPath("");
-        private readonly By _swipeLeft = By.XPath("");
-        private readonly By _movedOneRight = By.XPath("");
-        private readonly By _movedOneLeft = By.XPath("");
-        private readonly By _cookieClose = By.CssSelector("[class = 'cookies-1_close']");
+        private readonly By _clickRightButton = By.CssSelector("[class='swiper_services-btn-next swiper-btn-next']");
+        private readonly By _clikLeftButton = By.CssSelector("[class='swiper_services-btn-prev swiper-btn-prev']");
+        private readonly By _movedOneRight = By.XPath("//*[@id='gromadyanam']/div[1]/div/div[2]/div[5]/div[1]/div/a");
+        private readonly By _movedOneLeft = By.XPath("//*[@id='gromadyanam']/div[1]/div/div[2]/div[4]/div[1]/div/a");
+        private readonly By _cookieClose = By.CssSelector("[class='cookies-1_close']");
+        private readonly By _swipeLeft = By.XPath("//*[@id='gromadyanam']/div[1]/div/div[3]/span[1]");
+        private readonly By _swipeRight = By.XPath("//*[@id='gromadyanam']/div[1]/div/div[3]/span[2]");
 
         public PopularServisesFromMainMenu SwipeToTheRightClick()
         {
@@ -49,7 +49,7 @@ namespace DIIA_UITest.POM
 
         public PopularServisesFromMainMenu GoToPopularServicePage()
         {
-            _webDriver.Navigate().GoToUrl("");
+            _webDriver.Navigate().GoToUrl("https://diia.gov.ua/services/covid19-sertifikat-pro-vakcinaciyu");
             return this;
         }
 
