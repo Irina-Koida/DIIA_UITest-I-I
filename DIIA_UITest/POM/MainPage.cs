@@ -16,6 +16,5 @@ namespace DIIA_UITest.POM
             _webDriver.Navigate().GoToUrl("https://diia.gov.ua/");
             return this;
         }
-
     }
 }
