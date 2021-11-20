@@ -2,7 +2,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
-using System.Linq;
 using TechTalk.SpecFlow;
 using WebDriverManager;
 using WebDriverManager.DriverConfigs.Impl;
@@ -40,8 +39,7 @@ namespace DIIA_UITest.Hooks
         {
             IWebDriver driver = _scenarioContext.Get<IWebDriver>("WebDriver");
             driver.Dispose();
-        }
-        
+        } 
     }
 }
 

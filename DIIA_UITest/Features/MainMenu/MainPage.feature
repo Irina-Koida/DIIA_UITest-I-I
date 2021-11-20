@@ -9,10 +9,10 @@ Background:
 @FAQ
 Scenario: Go to FAQ page from Питання та відповіді Main Page block
 	When I moved to 'Питання та відповіді' block
-	And click on 'Всі питання та відповіді' button
+	When I click on 'Всі питання та відповіді' button
 	Then I navigate to the FAQ Page
 @FAQ
-Scenario: Go to FAQ page from Питання та відповіді block, by clicking arrow
+Scenario: Go to FAQ page from Питання та відповіді block by clicking arrow
 	When I moved to 'Питання та відповіді' block
 	When I click on 'Arrow' button from 'Питання та відповіді'block
 	Then I navigate to the FAQ Page

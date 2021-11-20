@@ -19,7 +19,7 @@ namespace DIIA_UITest.POM
         private readonly By _swipeLeft = By.XPath("//*[@id='gromadyanam']/div[1]/div/div[3]/span[1]");
         private readonly By _swipeRight = By.XPath("//*[@id='gromadyanam']/div[1]/div/div[3]/span[2]");
 
-        public PopularServisesFromMainMenu SwipeToTheRightClick(
+        public PopularServisesFromMainMenu SwipeToTheRightClick()
         {
             _webDriver.FindElement(_swipeRight).Click();
             return this;
