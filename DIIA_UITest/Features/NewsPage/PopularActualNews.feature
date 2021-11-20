@@ -1,6 +1,6 @@
 ﻿Feature: PopularActualNews
 As a user
-I want see a news on the news page
+I want to see a news on the news page
 In order to read the news
 
 Background:

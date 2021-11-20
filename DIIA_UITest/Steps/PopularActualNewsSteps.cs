@@ -1,5 +1,4 @@
-﻿using System;
-using TechTalk.SpecFlow;
+﻿using TechTalk.SpecFlow;
 using OpenQA.Selenium;
 using DIIA_UITest.POM;
 
