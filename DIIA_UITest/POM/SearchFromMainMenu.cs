@@ -1,4 +1,6 @@
 ﻿using OpenQA.Selenium;
+using System;
+using System.Threading;
 
 namespace DIIA_UITest.POM
 {

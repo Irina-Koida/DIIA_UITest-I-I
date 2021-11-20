@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using TechTalk.SpecFlow;
 using DIIA_UITest.POM;
 

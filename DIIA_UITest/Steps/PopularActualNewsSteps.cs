@@ -1,75 +1,51 @@
-﻿using TechTalk.SpecFlow;
-using OpenQA.Selenium;
-using DIIA_UITest.POM;
+﻿using System;
+using TechTalk.SpecFlow;
 
 namespace DIIA_UITest.Steps
 {
     [Binding]
     public class PopularActualNewsSteps
     {
-        private readonly ScenarioContext _scenarioContext;
-        private readonly PopularActualNews _popularActualNews;
-        private readonly IWebDriver _webDriver;
-
-        public PopularActualNewsSteps(ScenarioContext scenarioContext)
-        {
-            _scenarioContext = scenarioContext;
-            _webDriver = _scenarioContext.Get<IWebDriver>("WebDriver");
-            _popularActualNews = new PopularActualNews(_webDriver);
-        }
-
         [Given(@"News page is open")]
         public void GivenNewsPageIsOpen()
         {
-            _popularActualNews.GoToNewsPage();
-        }
-
-        [When(@"I click on the more news button")]
-        public void WhenIClickOnTheMoreNewsButton()
-        {
-            _popularActualNews.СlickMoreNewsButton();
+            ScenarioContext.Current.Pending();
         }
         
-        [When(@"I click the next page button")]
-        public void WhenIClickTheNextPageButton()
+        [When(@"I click ""(.*)"" button")]
+        public void WhenIClickButton(string p0)
         {
-            _popularActualNews.СlikNextPageButton();
-        }
-        
-        [When(@"I click the previous page button")]
-        public void WhenIClickThePreviousPageButton()
-        {
-            _popularActualNews.ClikPreviousPageButton();
+            ScenarioContext.Current.Pending();
         }
         
         [When(@"I click on the first news")]
         public void WhenIClickOnTheFirstNews()
         {
-            _popularActualNews.GoToSelectNewsPage();
+            ScenarioContext.Current.Pending();
         }
         
         [Then(@"The pagination number of next page are active")]
         public void ThenThePaginationNumberOfNextPageAreActive()
         {
-            _popularActualNews.SeeAActivePlaginationNextPage();
+            ScenarioContext.Current.Pending();
         }
         
         [Then(@"I navigate to the next page")]
         public void ThenINavigateToTheNextPage()
         {
-            _popularActualNews.SeeAActivePlaginationNextPage();
+            ScenarioContext.Current.Pending();
         }
-
+        
         [Then(@"I navigate to the previous page")]
         public void ThenINavigateToThePreviousPage()
         {
-            _popularActualNews.SeeAActivePlaginationPreviousPage();
+            ScenarioContext.Current.Pending();
         }
         
         [Then(@"I navigate to the news page")]
         public void ThenINavigateToTheNewsPage()
         {
-            _popularActualNews.GoToSelectNewsPage();
+            ScenarioContext.Current.Pending();
         }
     }
 }
