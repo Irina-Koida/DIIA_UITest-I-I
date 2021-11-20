@@ -39,8 +39,8 @@ namespace DIIA_UITest.POM
         public PopularActualNews ClikPreviousPageButton()
         {
             _webDriver.FindElement(_clikNextPageButton).Click();
-            _webDriver.FindElement(_clikPreviousPageButton).Click();
             _webDriver.FindElement(_cookieClose).Click();
+            _webDriver.FindElement(_clikPreviousPageButton).Click();
             return this;
         }
 
