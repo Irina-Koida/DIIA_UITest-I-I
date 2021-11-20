@@ -11,15 +11,15 @@ namespace DIIA_UITest.POM
             _webDriver = webDriver;
         }
 
-        private readonly By _clickRightButton = By.CssSelector("");
-        private readonly By _clikLeftButton = By.CssSelector("");
-        private readonly By _swipeRight = By.XPath("");
-        private readonly By _swipeLeft = By.XPath("");
-        private readonly By _movedOneRight = By.XPath("");
-        private readonly By _movedOneLeft = By.XPath("");
-        private readonly By _cookieClose = By.CssSelector("[class = 'cookies-1_close']");
+        private readonly By _clickRightButton = By.CssSelector("[swiper_services-btn-next swiper-btn-next disabled]");
+        private readonly By _clikLeftButton = By.CssSelector("[class=\"swiper_services-btn-prev swiper-btn-prev");
+        private readonly By _swipeRight = By.CssSelector("[class=\"swiper-pagination-bullet swiper-pagination-bullet-active selectorgadget_selected\"");
+        private readonly By _swipeLeft = By.CssSelector("[class=\"swiper-pagination-bullet swiper-pagination-bullet-active selectorgadget_selected\"");
+        private readonly By _movedOneRight = By.CssSelector("[#gromadyanam > div.swiper_services-box]");
+        private readonly By _movedOneLeft =By.CssSelector("[#gromadyanam > div.swiper_services-box]");
+        private readonly By _cookieClose = By.CssSelector("[class=\"cookies-1_close\"]");
 
-        public PopularServisesFromMainMenu SwipeToTheRightClick()
+        public PopularServisesFromMainMenu SwipeToTheRightClick(
         {
             _webDriver.FindElement(_swipeRight).Click();
             return this;
