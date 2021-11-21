@@ -85,13 +85,13 @@ namespace DIIA_UITest.Features.MainMenu
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Check navigation to the service page from the block with popular service")]
-        [NUnit.Framework.CategoryAttribute("popularservice")]
         [NUnit.Framework.CategoryAttribute("swiper")]
+        [NUnit.Framework.CategoryAttribute("popularservice")]
         public virtual void CheckNavigationToTheServicePageFromTheBlockWithPopularService()
         {
             string[] tagsOfScenario = new string[] {
-                    "popularservice",
-                    "swiper"};
+                    "swiper",
+                    "popularservice"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check navigation to the service page from the block with popular service", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 10
@@ -128,7 +128,7 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Check the swipe right the popular services by swiper - right button")]
+        [NUnit.Framework.DescriptionAttribute("Check the swipe right the popular services by swiper-right button")]
         [NUnit.Framework.CategoryAttribute("swiper")]
         [NUnit.Framework.CategoryAttribute("popularservice")]
         public virtual void CheckTheSwipeRightThePopularServicesBySwiper_RightButton()
@@ -137,7 +137,7 @@ this.FeatureBackground();
                     "swiper",
                     "popularservice"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check the swipe right the popular services by swiper - right button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check the swipe right the popular services by swiper-right button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 15
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -172,7 +172,7 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Check the swipe left the popular services by swiper - left button")]
+        [NUnit.Framework.DescriptionAttribute("Check the swipe left the popular services by swiper-left button")]
         [NUnit.Framework.CategoryAttribute("swiper")]
         [NUnit.Framework.CategoryAttribute("popularservice")]
         public virtual void CheckTheSwipeLeftThePopularServicesBySwiper_LeftButton()
@@ -181,7 +181,7 @@ this.FeatureBackground();
                     "swiper",
                     "popularservice"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check the swipe left the popular services by swiper - left button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check the swipe left the popular services by swiper-left button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 20
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -222,16 +222,16 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Check the swipe to the left of popular services bullet pagination")]
+        [NUnit.Framework.DescriptionAttribute("Check the swipe to the left of popular services by left-bullet pagination")]
         [NUnit.Framework.CategoryAttribute("swiper")]
         [NUnit.Framework.CategoryAttribute("popularservice")]
-        public virtual void CheckTheSwipeToTheLeftOfPopularServicesBulletPagination()
+        public virtual void CheckTheSwipeToTheLeftOfPopularServicesByLeft_BulletPagination()
         {
             string[] tagsOfScenario = new string[] {
                     "swiper",
                     "popularservice"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check the swipe to the left of popular services bullet pagination", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check the swipe to the left of popular services by left-bullet pagination", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 27
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -259,29 +259,29 @@ this.FeatureBackground();
  testRunner.When("I click on the right side of the pagination bullet bar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 29
- testRunner.Then("Popular services moved one position.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("Popular services moved right on one position.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 30
- testRunner.When("I click from left to right on the pagination bullet bar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click on the left side of the pagination bullet bar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 31
- testRunner.Then("Popular services moved one position to the left.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("Popular services moved left on one position.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Check the swipe to the right of popular services bullet pagination")]
+        [NUnit.Framework.DescriptionAttribute("Check the swipe to the right of popular services by right-bullet pagination")]
         [NUnit.Framework.CategoryAttribute("swiper")]
         [NUnit.Framework.CategoryAttribute("popularservice")]
-        public virtual void CheckTheSwipeToTheRightOfPopularServicesBulletPagination()
+        public virtual void CheckTheSwipeToTheRightOfPopularServicesByRight_BulletPagination()
         {
             string[] tagsOfScenario = new string[] {
                     "swiper",
                     "popularservice"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check the swipe to the right of popular services bullet pagination", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check the swipe to the right of popular services by right-bullet pagination", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 34
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -309,7 +309,7 @@ this.FeatureBackground();
  testRunner.When("I click on the right side of the pagination bullet bar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 36
- testRunner.Then("Popular services moved one position.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("Popular services moved right on one position.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

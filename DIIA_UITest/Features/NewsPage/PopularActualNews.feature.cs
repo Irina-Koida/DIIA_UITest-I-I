@@ -35,7 +35,7 @@ namespace DIIA_UITest.Features.NewsPage
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/NewsPage", "PopularActualNews", "As a user\r\nI want see a news on the news page\r\nIn order to read the news", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/NewsPage", "PopularActualNews", "As a user\r\nI want to see a news on the news page\r\nIn order to read the news", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
