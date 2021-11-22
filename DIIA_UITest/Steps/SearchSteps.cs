@@ -21,7 +21,7 @@ namespace DIIA_UITest.Steps
         [When(@"I input ""(.*)"" in the search field")]
         public void WhenIInputInTheSearchField(string input)
         {
-            _searchFromMainMenu.InputOnSearchInformationField();
+            _searchFromMainMenu.InputOnSearchInformationField(input);
         }
 
         [When(@"I click a search button")]
