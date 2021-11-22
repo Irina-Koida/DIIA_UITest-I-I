@@ -23,7 +23,7 @@ namespace DIIA_UITest.Steps
             _mainPage = new MainPage(webDriver);
         }
 
-        //[Given(@"Sign in page is opened")]
+        //[Given(@"Main page is open")]
         //public void MainPageIsOpened()
         //{
         //    _mainPage.GoToMainPage();            
