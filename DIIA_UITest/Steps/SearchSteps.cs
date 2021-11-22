@@ -1,7 +1,6 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
-using TechTalk.SpecFlow;
+﻿using OpenQA.Selenium;
 using DIIA_UITest.POM;
+using TechTalk.SpecFlow;
 
 namespace DIIA_UITest.Steps
 {
@@ -11,26 +10,18 @@ namespace DIIA_UITest.Steps
         private readonly ScenarioContext _scenarioContext;
         private readonly SearchFromMainMenu _searchFromMainMenu;
         private readonly IWebDriver _webDriver;
-        private readonly MainPage _mainPage;
 
         public SearchSteps(ScenarioContext scenarioContext)
         {
             _scenarioContext = scenarioContext;
             _webDriver = _scenarioContext.Get<IWebDriver>("WebDriver");
             _searchFromMainMenu = new SearchFromMainMenu(_webDriver);
-            _mainPage = new MainPage(_webDriver);
-        }
-
-        [Given(@"Main page is open")]
-        public void GivenMainPageIsOpen()
-        {
-            _mainPage.GoToMainPage();
         }
 
         [When(@"I input ""(.*)"" in the search field")]
-        public void WhenIInputInTheSearchField(string inputValid)
+        public void WhenIInputInTheSearchField(string input)
         {
-            _searchFromMainMenu.InputOnSearchInformationField(inputValid);
+            _searchFromMainMenu.InputOnSearchInformationField(input);
         }
 
         [When(@"I click a search button")]
@@ -40,6 +31,9 @@ namespace DIIA_UITest.Steps
         }
 
         [Then(@"I see a open  search page with text ""(.*)""")]
-        public void ThenISeeAOpenSearchPageWithText(string text) => _searchFromMainMenu.SearchInfoRequestText(text);
+        public void ThenISeeAOpenSearchPageWithText()
+        {
+            _searchFromMainMenu.SearchInfoRequestText();
+        }
     }
 }
